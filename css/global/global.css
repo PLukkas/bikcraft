@@ -7,7 +7,7 @@
 }
 
 body{
-    height: calc(100vh + 1000px);
+    height: 5000px;
 
 }
 
@@ -26,4 +26,16 @@ ul{
 
 img{
     display: block;
+    max-width: 100%;
+}
+
+img[src$=".jpg"]{
+    border-radius: 4px;
+}
+
+.container-max-width{
+    max-width: 1200px;
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 0 auto;
 }

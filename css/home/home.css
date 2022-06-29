@@ -3,14 +3,10 @@
 .main-background{
     background-color: var(--cor-12);
     box-shadow: inset 0 -120px 0 0 #ffffff;
+    
 }
 
 .main-container{
-    max-width: 1200px;
-    margin: 0px auto;
-    padding: 0px 20px;
-    box-sizing: border-box;
-
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 0px 40px;
@@ -33,7 +29,6 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 4px;
 }
 
 .botao{

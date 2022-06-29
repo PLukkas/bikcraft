@@ -6,10 +6,6 @@
 }
 
 .header-container{
-    max-width: 1200px;
-    box-sizing: border-box;
-    margin: 0px auto;
-
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
