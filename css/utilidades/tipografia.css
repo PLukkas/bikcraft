@@ -19,7 +19,7 @@
 }
 
 .fonte-1-mn{
-    font: 500 1.125rem/1.35 "Poppins", Arial, Helvetica, sans-serif;
+    font: 600 1.125rem/1.35 "Poppins", Arial, Helvetica, sans-serif;
 }
 
 .fonte-1-p{
@@ -61,6 +61,14 @@
     font: 400 0.875rem/1.43 "Roboto", Arial, Helvetica, sans-serif;
 }
 
+/* Merriweather */
+
+.fonte-3-default{
+    font-weight: 900;
+    font-family: 'Merriweather',Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
+
 /* Responsividade */
 
 @media (max-width: 1200px){
@@ -75,5 +83,9 @@
 @media (max-width: 800px){
     .fonte-1-xxg{
         font-size: 2rem;
+    }
+
+    .fonte-1-xg{
+        font-size: 1.5rem;
     }
 }
