@@ -17,7 +17,7 @@
 .header-menu{
     display: flex;
     gap: 40px;
-    
+    flex-wrap: wrap;  
 }
 
 .header-menu a{
@@ -74,5 +74,19 @@
 
     .header-menu a{
         padding: 8px 12px;
+    }
+}
+
+@media (max-width: 550px){
+    .header-container{
+        flex-direction: column;
+    }
+
+    .header-menu{
+        justify-content: center;
+    }
+
+    .header-menu li a{
+        font-size: 0.875rem;
     }
 }

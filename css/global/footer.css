@@ -74,3 +74,13 @@
         grid-column: 1/-1;
     }
 }
+
+@media (max-width: 550px){
+    .footer-item{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-info-contato li:nth-child(even)::after {
+        max-width: 75%;
+    }
+}
