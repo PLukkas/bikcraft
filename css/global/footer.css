@@ -1,12 +1,29 @@
-.footer-background{
+.footer{
     background-color: var(--cor-12);
 }
 
-.footer-item{
+.footer-container {
     display: grid;
     grid-template-columns: 3fr 5fr 4fr;
     gap: 40px;
     padding: 60px 20px;
+}
+
+.footer-contato h3, .footer-informacoes h3{
+    margin-bottom: 32px;
+}
+
+.footer-contato ul{
+    margin-bottom: 32px;
+}
+
+.footer-contato ul li, .footer-nav ul li{
+    margin-bottom: 16px;
+}
+
+.footer-redes {
+    display: flex;
+    gap: 32px;
 }
 
 .footer-direitos{
@@ -14,73 +31,47 @@
     grid-column: 1/-1;
 }
 
-.footer-redes{
-    display: flex;
-    gap: 32px;
-}
+/* detalhes */
 
-.footer-info h3{
-    margin-bottom: 32px;
-}
-
-.footer-info ul li {
-    margin-bottom: 16px;
-}
-
-.footer-info-contato {
-    margin-bottom: 32px;
-}
-
-/* Detalhes */
-
-.footer-info-contato li:nth-child(even)::after {
+.footer-contato ul li:nth-child(even):after{
     content: "";
-    max-width: 320px;
-    height: 2px;
-    background-color: var(--cor-11);
     display: block;
     margin-top: 16px;
+    height: 2px;
+    max-width: 360px;
+    background-color: var(--cor-11);    
 }
 
-.footer-info li a:hover{
+.footer-contato ul li a:hover, .footer-informacoes nav ul li a:hover{
     color: var(--cor-00);
 }
 
-.footer-facebook-icon:hover path, .footer-youtube-icone:hover path, .footer-instagram-icon:hover path{
-    transition: 0.2s;
+.footer-redes a:nth-child(1):hover path{
+   fill: #f7398a;
 }
 
-
-.footer-facebook-icon:hover path{
-    fill: #334d84;
+.footer-redes a:nth-child(2):hover path{
+    fill: #335fed;
+}
+ 
+.footer-redes a:nth-child(3):hover path{
+    fill: #db0d0e;
 }
 
-.footer-youtube-icone:hover path{
-    fill: #ff0000;
-}
-
-.footer-instagram-icon:hover path{
-    fill: #cf2872;
-}
-
-/* Resonsivo */
+/* responsivo */
 
 @media (max-width: 800px){
-    .footer-item{
+    .footer-container{
         grid-template-columns: 1fr 1fr;
     }
 
-    .footer-item > img {
+    .footer-logo{
         grid-column: 1/-1;
     }
 }
 
-@media (max-width: 550px){
-    .footer-item{
+@media (max-width: 800px){
+    .footer-container{
         grid-template-columns: 1fr;
-    }
-
-    .footer-info-contato li:nth-child(even)::after {
-        max-width: 75%;
     }
 }

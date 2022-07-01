@@ -1,0 +1,111 @@
+/* font family */
+
+.f-1{
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.f-2{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.f-3{
+    font-family: "Merriweather", serif;
+}
+
+/* Font size */
+.f-size-0-75{
+    font-size: 0.75rem;
+    line-height: 1.35;
+}
+
+.f-size-1{
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.f-size-1-125{
+    font-size: 1.125rem;
+    line-height: 1.35;
+}
+
+.f-size-1-25{
+    font-size: 1.25rem;
+    line-height: 1.35; 
+}
+
+.f-size-1-5{
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.f-size-1-75{
+    font-size: 1.75rem;
+}
+
+.f-size-2{
+    font-size: 2rem;
+    line-height: 1.25;
+}
+
+.f-size-2-5{
+    font-size: 2.5rem;
+}
+
+.f-size-3{
+    font-size: 3rem;
+}
+
+.f-size-3-5{
+    font-size: 3.5rem;
+}
+
+.f-size-4{
+    font-size: 4rem;
+    line-height: 1.125;
+}
+
+/* media fontes */
+
+@media (max-width: 1200px){
+    .f-size-4{
+        font-size: 3rem;
+    }
+
+    .f-size-1-5{
+        font-size: 1.125rem;
+    }
+}
+
+@media (max-width: 800px){
+    .f-size-4{
+        font-size: 2rem;
+    }
+
+    .f-size-2{
+        font-size: 1.5rem;
+    }
+
+    .f-size-1-5{
+        font-size: 1.125rem;
+    }
+}
+
+/* Font weight */
+
+.f-bold-400{
+    font-weight: 400;
+}
+
+.f-bold-500{
+    font-weight: 500;
+}
+
+.f-bold-600{
+    font-weight: 600;
+}
+
+/* Text transform */
+
+.up{
+    text-transform: uppercase;
+}

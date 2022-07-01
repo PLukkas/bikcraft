@@ -1,92 +1,83 @@
-/* Header */
-
-.header-background{
+.header{
     background-color: var(--cor-12);
-    
 }
 
 .header-container{
     display: flex;
-    flex-wrap: wrap;
     gap: 20px;
-    align-items: center;
     justify-content: space-between;
+    align-items: center;
     padding: 20px;
+    flex-wrap: wrap;
 }
 
-.header-menu{
+.header-navegacao ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 40px;
-    flex-wrap: wrap;  
 }
 
-.header-menu a{
-    display: inline-block;
+.header-container ul li a{
     padding: 16px 0px;
+    display: inline-block;
     position: relative;
+    border-radius: 4px;
 }
 
+/* detalhes */
 
-/* Detalhes */
-
-.header-menu a::after {
-    content: "";
+.header-container ul li a::after{
+    content: " ";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: var(--cor-00);
     display: block;
     margin-top: 4px;
-    height: 2px;
-    width: 0px;
-    background-color: #ffffff;
-    position: absolute;
-    transition: width 0.3s;
+    transition: 0.3s;
 }
 
-.header-menu a:hover:after {
+.header-container ul li a:hover::after{
     width: 100%;
-    
 }
 
-/* Responsivo */
+/* responsivo */
 
 @media (max-width: 800px){
-    .header-menu{
+    .header-navegacao ul{
         gap: 20px;
     }
 
-    .header-menu a {
+    .header-container ul li a{
         padding: 12px 16px;
         background-color: var(--cor-11);
-        border-radius: 4px;
     }
 
-    .header-menu a:hover{
-        background-color: var(--cor-10 );
+    .header-container ul li a:hover{
+        background-color: var(--cor-10);
     }
 
-    .header-menu a::after{
+    
+    .header-container ul li a:hover::after{
         display: none;
     }
 }
 
 @media (max-width: 600px){
-    .header-menu{
+    .header-navegacao ul{
         gap: 12px;
     }
 
-    .header-menu a{
+    .header-container ul li a{
+        font-size: 0.875rem;
         padding: 8px 12px;
     }
-}
 
-@media (max-width: 550px){
-    .header-container{
-        flex-direction: column;
-    }
-
-    .header-menu{
+    .header-container {
         justify-content: center;
     }
 
-    .header-menu li a{
-        font-size: 0.875rem;
+    .header-navegacao ul{
+        justify-content: center;
     }
 }

@@ -1,0 +1,13 @@
+@import "../global/global.css";
+@import "../utilitario/cores.css";
+@import "../utilitario/tipografia.css";
+@import "../utilitario/objetos.css";
+
+@import "../global/header.css";
+@import "../inicial/introducao.css";
+@import "../inicial/escolha.css";
+@import "../inicial/tecnologia.css";
+@import "../inicial/parceiros.css";
+@import "../inicial/depoimento.css";
+@import "../inicial/seguros.css";
+@import "../global/footer.css";
