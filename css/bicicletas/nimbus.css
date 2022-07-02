@@ -1,0 +1,15 @@
+#nimbus .titulo-pagina-container > p {
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.main-bicicletas{
+    background-color: var(--cor-11);
+}
+
+.bicicletas-loja-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
