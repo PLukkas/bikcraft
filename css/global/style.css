@@ -4,6 +4,7 @@
 @import "../utilitario/cores.css";
 @import "../utilitario/tipografia.css";
 @import "../utilitario/objetos.css";
+@import "../utilitario/titulo.css";
 
 /* principais */
 
@@ -21,5 +22,8 @@
 
 /* termos */
 
-@import "../utilitario/titulo.css";
 @import "../termos/termos.css";
+
+/* catalogo */
+
+@import "../catalogo/catalogo.css";
