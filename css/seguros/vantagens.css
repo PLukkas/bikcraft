@@ -1,0 +1,32 @@
+.article-vantagens{
+    background-color: var(--cor-12);
+}
+
+.vantagens-container{
+    padding: 120px 20px;
+}
+
+.vantagens-container > h2{
+    margin-bottom: 60px;
+}
+
+.vantagens-conteudo{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap: 40px;
+}
+
+.vantagens-conteudo-item img,
+.vantagens-conteudo-item h3{
+    margin-bottom: 8px;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+/* responsivo */
+
+@media (max-width: 800px){
+    .vantagens-conteudo{
+        gap: 20px;
+    }
+}
