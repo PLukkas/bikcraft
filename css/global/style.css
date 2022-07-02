@@ -1,13 +1,25 @@
+/* essenciais */
+
 @import "../global/global.css";
 @import "../utilitario/cores.css";
 @import "../utilitario/tipografia.css";
 @import "../utilitario/objetos.css";
 
+/* principais */
+
 @import "../global/header.css";
+@import "../global/footer.css";
+
+/* home */
+
 @import "../inicial/introducao.css";
 @import "../inicial/escolha.css";
 @import "../inicial/tecnologia.css";
 @import "../inicial/parceiros.css";
 @import "../inicial/depoimento.css";
 @import "../inicial/seguros.css";
-@import "../global/footer.css";
+
+/* termos */
+
+@import "../utilitario/titulo.css";
+@import "../termos/termos.css";

@@ -1,0 +1,20 @@
+.termos-conteudo{
+    padding: 80px 20px;
+}
+
+
+.termos-conteudo-lista > div:nth-child(1n + 2){
+    margin-top: 48px;
+}
+
+.termos-conteudo-lista h2{
+    margin-bottom: 20px;
+}
+
+.termos-conteudo-lista p {
+    margin-bottom: 24px;
+    max-width: 75ch;
+    
+   font-size: 1rem;
+   line-height: 1.5;
+}

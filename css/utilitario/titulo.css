@@ -1,0 +1,29 @@
+.titulo-pagina-background{
+    background-color: var(--cor-11);
+}
+
+.titulo-pagina-container{
+    padding: 60px 20px;
+}
+
+/* O p é especial (propriedades próprias) */
+
+.titulo-pagina-container p{
+    margin-bottom: 4px;
+        
+    /* tamanho fonte especial */
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 0.015em;
+}
+
+@media (max-width: 800px){
+    .titulo-pagina-container{
+        padding: 40px 20px;
+    }
+
+    .titulo-pagina-container p{
+        font-size: 1rem;
+        text-transform: lowercase;
+    }
+}
