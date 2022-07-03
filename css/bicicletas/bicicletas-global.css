@@ -1,0 +1,21 @@
+.id-bicicletas .titulo-pagina-container > p {
+    font-size: 2rem;
+    margin: 0px;
+}
+
+.id-bicicletas .escolha-bikes{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.bicicletas-padding-container{
+    padding: 60px 0px 120px 0px;
+}
+
+/* responsivo */
+
+@media (max-width: 800px){
+    .id-bicicletas .titulo-pagina-container > p {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+}

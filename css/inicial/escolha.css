@@ -16,6 +16,7 @@
 
 .escolha-bikes a{
     min-width: 280px;
+    display: block;
 }
 
 .escolha-bikes a > h3{

@@ -37,3 +37,5 @@
 /* bicicletas */
 
 @import "../bicicletas/nimbus.css";
+@import "../bicicletas/bicicletas-global.css";
+@import "../bicicletas/bicicleta-seguros.css";

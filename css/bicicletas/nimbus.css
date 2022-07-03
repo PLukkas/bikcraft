@@ -1,8 +1,3 @@
-#nimbus .titulo-pagina-container > p {
-    font-size: 2rem;
-    margin: 0px;
-}
-
 .main-bicicletas{
     background-color: var(--cor-11);
 }
@@ -11,5 +6,177 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+    padding-bottom: 60px;
 }
 
+.bicicletas-loja-imagem{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.bicicletas-loja-imagem img{
+    min-width: 200px;
+    flex: 1;
+}
+
+.bicicletas-loja-imagem img:first-child{
+    min-width: 100%;
+}
+
+.bicicletas-loja-conteudo > p{
+    margin-bottom: 32px;
+    letter-spacing: 0.015em;
+}
+
+.bicicletas-botao{
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: auto auto;
+    gap: 10px 12px;
+    margin-bottom: 40px;
+}
+
+.bicicletas-botao > div{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 8px;
+}
+
+.bicicletas-botao a {
+    align-self: center;
+}
+
+.bicicletas-botao span{
+    grid-column: 2/-1;
+    justify-self: start;
+    padding: 4px 8px;
+    background-color: var(--cor-12);
+    border-radius: 4px;
+
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.bicicletas-loja-info > h2{
+    margin-bottom: 12px;
+}
+
+.bicicletas-loja-info img{
+    width: 24px;
+}
+
+.bicicletas-loja-info h3{
+    margin: 4px 0px 6px 0px
+}
+
+.bicicletas-loja-info ul {
+    padding: 32px;
+    margin-bottom: 40px;
+    background-color: var(--cor-12);
+    border-radius: 4px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+}
+
+.bicicletas-loja-info ul li p {
+    font: 400 0.875rem/1.43 "Roboto", sans-serif;
+    color: var(--cor-05);
+}
+
+.bicicletas-loja-ficha{
+    background-color: var(--cor-12);
+    padding: 32px;
+    border-radius: 4px;
+}
+
+.bicicletas-loja-ficha ul li{
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 4px 0px;
+    text-align: right;
+}
+
+.bicicletas-loja-ficha ul li:nth-child(1n + 2){
+    border-top: 1px solid var(--cor-11);
+}
+
+.bicicletas-loja-ficha > h2{
+    margin-bottom: 12px;
+}
+
+.bicicletas-loja-ficha span{
+    color: var(--cor-06);
+}
+
+/* responsivo */
+
+@media (max-width: 800px){
+    #nimbus .titulo-pagina-container > p {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .bicicletas-loja-container{
+        grid-template-columns: 1fr;
+        gap: 40px;
+        padding-bottom: 60px;
+    }
+
+    .bicicletas-loja-imagem{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 2fr 1fr;
+        grid-template-areas: 
+        "bike1 bike2"
+        "bike1 bike3";
+    }
+
+    .bicicletas-loja-imagem img:first-child{
+        grid-area: bike1;
+        min-width: 0px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .bicicletas-loja-imagem img{
+        min-width: 0px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+@media (max-width: 550px){
+    .bicicletas-loja-imagem{
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "bike1 bike1"
+        "bike2 bike3";
+    }
+    
+    .bicicletas-loja-imagem {
+        gap: 16px;
+    }
+
+    .bicicletas-loja-container{
+        gap: 20px;
+    }
+
+    .bicicletas-loja-conteudo > p {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 400px){
+    .bicicletas-loja-info ul{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+}
