@@ -1,0 +1,31 @@
+.form input, .form textarea{
+    width: 100%;
+}
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form label{
+    display: block;
+    font: 500 1rem/1.5 "Poppins", sans-serif;
+    margin-bottom: 4px;
+}
+
+.form input, .form textarea{
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+    padding: 12px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid var(--cor-02);
+}
+
+.form-column-2{
+    grid-column: 1/-1;
+}
+
+.form button{
+    justify-self: start;
+}

@@ -4,6 +4,7 @@
     border-radius: 4px;
     text-transform: uppercase;
     font: 600 1.125rem/1.35 "Poppins", sans-serif;
+    cursor: pointer;
 }
 
 .link{
@@ -30,6 +31,7 @@
 .botao-primario, .botao-seta{
     background: linear-gradient(#ffbf00, #f2a50c);
     color: var(--cor-a5);
+    border: none;
 }
 
 .botao-secundario{
@@ -55,7 +57,7 @@
 /* detalhes */
 
 .botao-primario:hover, .botao-seta:hover{
-    background: linear-gradient(#E89B0C, #FF8E0D);
+    background: linear-gradient(#ffba01, #ff9501);
 }
 
 .botao-secundario:hover{

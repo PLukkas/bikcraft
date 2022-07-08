@@ -39,3 +39,10 @@
 @import "../bicicletas/nimbus.css";
 @import "../bicicletas/bicicletas-global.css";
 @import "../bicicletas/bicicleta-seguros.css";
+
+/* contato */
+@import "../contato/contato.css";
+@import "../contato/lojas.css";
+
+/* formulario */
+@Import "../utilitario/formulario.css";
