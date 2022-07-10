@@ -5,8 +5,6 @@
 .contato-grid{
     display: grid;
     grid-template-columns: 5fr 7fr;
-    box-shadow: 0px 2px 10px rgb(0, 0, 0, 0.1);
-
 }
 
 .contato-info{
@@ -52,7 +50,44 @@
 }
 
 .contato-form{
+    box-shadow: 0px 2px 10px rgb(0, 0, 0, 0.1);
     background-color: var(--cor-01);
     border-radius: 0px 5px 5px 0px;
     padding: 60px;
+}
+
+@media (max-width: 800px){
+    .contato-grid-container{
+        background: linear-gradient(var(--cor-11) 40%,var(--cor-00) 0px);
+    }
+
+    .contato-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .contato-info, .contato-form{
+        padding: 40px;
+    }
+    
+    .contato-info{
+        border-radius: 5px 5px 0px 0px;
+    }
+    
+    .contato-form{
+        border-radius: 0px 0px 5px 5px;
+    }
+
+    .contato-info > h2, .contato-contato{
+        margin-bottom: 32px;
+    }
+
+    .contato-endereco{
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 400px){
+    .contato-info, .contato-form {
+        padding: 20px;
+    }
 }

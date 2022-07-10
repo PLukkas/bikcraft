@@ -58,3 +58,16 @@
 .contato-contato a:hover{
     color: var(--cor-00);
 }
+
+
+@media (max-width: 800px){
+    .lojas-info ul {
+        grid-column: 1/-1;
+    }
+}
+
+@media (max-width: 700px){
+    .contato-lojas{
+        grid-template-columns: 1fr;
+    }
+}

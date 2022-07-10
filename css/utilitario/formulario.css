@@ -29,3 +29,9 @@
 .form button{
     justify-self: start;
 }
+
+@media (max-width: 600px){
+    .form{
+        grid-template-columns: 1fr;
+    }
+}
