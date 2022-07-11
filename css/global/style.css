@@ -46,3 +46,7 @@
 
 /* formulario */
 @Import "../utilitario/formulario.css";
+
+/* orçamento */
+
+@import "../orcamento/orcamento.css";

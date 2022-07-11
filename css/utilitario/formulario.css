@@ -30,6 +30,33 @@
     justify-self: start;
 }
 
+.form select{
+    font: 400 1rem/1.5 "Roboto", sans-serif;
+    padding: 14px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: 1px solid var(--cor-02);
+    width: 100%;
+}
+
+.check-termos{
+    display: flex;
+    align-items: center;
+}
+
+.check-termos > input{
+    height: 16px;
+    width: 16px;
+}
+
+.check-termos label{
+    margin: 0px 0px 0px 8px;
+}
+
+.check-link{
+    text-decoration: underline;
+}
+
 @media (max-width: 600px){
     .form{
         grid-template-columns: 1fr;
