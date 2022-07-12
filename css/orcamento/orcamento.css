@@ -67,6 +67,42 @@ input[type="radio"]{
     pointer-events: none;
 }
 
+.escolha-bik-itens, .escolha-seg-itens{
+    margin-top: 20px;
+}
+
+/* detalhes */
+
+/* span detalhe */
+#nimbus-stark + label, #magic-might + label, #nebula-cosmic + label, #ouro + label, #prata + label{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+#nimbus-stark + label span, #magic-might + label span, #nebula-cosmic + label span, #ouro + label span, #prata + label span{
+    display: none;
+}
+
+.form-orcamento-compra h2{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.form-orcamento-compra h2::before{
+    content: "";
+    background-color: var(--cor-a1);
+    height: 8px;
+    width: 4px;
+    position: absolute;
+    left: -12px;
+}
+
+[type="radio"] + label:hover{
+    cursor: pointer;
+    background-color: var(--cor-09);    
+}
+
 /* bikcraft ou seguro */
 
 .escolha-bik-itens, .escolha-seg-itens{
@@ -117,6 +153,10 @@ input[type="radio"]{
 
 #nimbus-stark:checked ~ #nimbus-descricao, #magic-might:checked ~ #magic-descricao, #nebula-cosmic:checked ~ #nebula-descricao{
     display: grid;
+}
+
+#nimbus-stark:checked + label span, #magic-might:checked + label span, #nebula-cosmic:checked + label span, #ouro:checked + label span, #prata:checked + label span{
+    display: block;
 }
 
 /* seguro - ouro e prata*/
@@ -186,8 +226,18 @@ input[type="radio"]{
     
 }
 
-@media (max-width: 900px){
-    .orcamento-conteudo-detalhes{
+@media (max-width: 800px){
+    .form-orcamento {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 400px){
+    .form-orcamento-compra{
+        grid-template-columns: 1fr;
+    }
+
+    #nimbus-descricao, #magic-descricao, #nebula-descricao{
         grid-template-columns: 1fr;
     }
 }
